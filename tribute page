@@ -1,0 +1,59 @@
+<style>
+html, body {
+  font-family: Oswald, sans-serif;
+  font-size: 1.2em;
+  text-align: center;
+  min-width: 300px;
+  color: #71a0a5;
+  background-color: #d9d9d9;
+}
+#main {
+  background-color: #f2f2f2;
+  padding: 30px;
+  margin: 25px auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  margin: auto;
+}
+#img-div {
+  margin-top: 20px;
+  width: auto;
+  border: 10px solid #71a0a5;
+  background:#71a0a5;
+  
+}
+#img-caption {
+  font-style: italics;
+  color: #d9d9d9;
+}
+ul {
+  text-align: left;
+}
+p {
+  text-align: justify;
+}
+</style>
+<div id="main">
+  <h1 id="title">Pixel Art</h1>
+  <div>A form of digital art originating from classic video games</div>
+  <div id="img-div">
+    <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/7/71/The_Gunk_699px.png" alt="">
+    <div id="img-caption">Pixel art image drawn by Lucas V. Barbosa, titled "The Gunk".
+    </div>
+  </div>
+  <div id="tribute-info">
+      <p>Pixel art began in arcades and 8-bit consoles, with titles like Space Invaders (1978) and The Legend of Zelda (1986).</p>
+        <p>For some of us, this is how we first experiended video games. The 8-bit and 16-bit styles often carries a strong sense of nostalgia.</p>
+      <p>Today, many indie games make incredible use of pixel art, such as Stardew Valley and Hyper Light Drifter.</p>
+      <ul>
+      <li>In order to get around color palette limitations, anti-aliasing and dithering techniques are used to simulate a broader range of colors.
+      <li>Cross-stitch, mosaic and beadwork share similarities with pixel art</li>
+      <li>The term pixel art was first published by Adele Goldberg and Robert Flegal in 1982</li>
+    </ul>
+
+    <h3>If you want to learn more about pixel art, follow this link to the <a id="tribute-link" href="https://en.wikipedia.org/wiki/Pixel_art" target="_blank">Wikipedia Entry</a>.</h3>
+  </div>
+</div>
