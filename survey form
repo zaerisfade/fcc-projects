@@ -1,0 +1,164 @@
+<style>
+html, body {
+  background-color: #252a34;
+  text-align: center;
+  font-family: Raleway, sans-serif;
+  min-width: 300px;
+  font-weight: 500;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
+h1 {
+  font-size: 2em;
+  font-weigh: bold;
+  margin: 10px;
+  color: #eaeaea;
+}
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+#form-outer {
+  background-color: #eaeaea;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 10px;
+  padding-top: 20px;
+}
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+#submit {
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+  background-color: #e84545;
+  border-radius: 4px;
+  color: #eaeaea;
+  font-size: 1em;
+}
+.dropdown {
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+  height: 35px;
+  width: 140px;
+  padding: 5px;
+  margin: 10px;  
+}
+.radio, .checkbox {
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+  position: relative;
+  left: -43px;
+}
+</style>
+<h1 id="title">Survey Form</h1>
+<div id="form-outer">
+  <p id="description">Sign up for this form</p>
+  <form id="survey-form" method="GET">
+  <div class="rowTab">
+    <div class="labels">
+      <label id="name-label" for="name">Name: </label>
+     </div>
+  <div class="rightTab">
+ <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+  </div>
+        </div>
+      <div class="rowTab">
+       <div class="labels">
+        <label for="email" id="email-label">Email: </label>
+        </div>
+        <div class="rightTab">
+          <input type="email" id="email" name="email" class="input-field" required placeholder="Enter your Email">
+        </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="age" id="number-label">Age:</label>
+      </div>
+      <div class="rightTab">
+      <input type="number" id="number" min="1" max="125" class="input-field" required placeholder="Age">
+      </div>
+    </div>
+    <div class="labels">
+      <label for="">How invested are you in this survey?</label>
+    </div>
+    <div class="rightTab">
+    <select id="dropdown" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option value="1">I don't even know where I am right now</option>
+      <option value="2">A tiny bit</option>
+      <option value="3">I need more of this survey in my life</option>
+    </select>
+    </div>
+  <div class="rowTab">
+    <div class="labels">
+      How much do you like this survey form?
+    </div>
+    <div class="rightTab">
+    <ul style="list-style: none;">
+      <li class="radio"><label>Ehh<input name="radio-buttons" value="1" type="radio" class="userRatings" ></label></li>
+      <li class="radio"><label>Maybe<input name="radio-buttons" value="2" type="radio"></label></li>
+      <li class="radio"><label>Dunno<input name="radio-buttons" value="3" type="radio"></label></li>
+    </ul>
+    </div>
+    </div>
+  <div class="rowTab">
+    <div class="labels">
+      What do you like about programming?
+    </div>
+    <div class="rightTab">
+      <select class="dropdown">
+    <option disabled selected value>Select an option</option>
+    <option value="challenges">Challenges</option>
+    <option value="projects">Projects</option>
+    <option value="community">Community</option>
+    <option value="openSource">Open Source</option>
+    </select>
+    </div>
+  </div>
+  <div class="rowTab">
+    <div class="labels">
+      <label for="preferences">Things that you want to code more in the future<br>(Check all that apply)</label>
+    </div>
+    <div class="rightTab">
+      <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Front-end Projects</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Back-end Projects</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">Data Visualization</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">Challenges</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Open Source Community</label></li>
+      </ul>
+    </div>
+  </div>
+      <div class="rowTab">
+      <div class="labels">
+        Want to add anything?
+        </div>
+        <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+  </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
