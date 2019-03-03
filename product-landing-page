@@ -1,0 +1,127 @@
+<style>
+@media {max-width: 650px) 
+  {
+    width: 100%
+  }
+body {
+  margin: 0;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#nav {
+  display: flex;
+}
+
+#header-img {
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav-bar {
+  position: fixed;
+  width: 100%;
+}
+nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1em;
+  align-items: center;
+  text-align: center;
+  border-bottom: 4px solid #734d26;
+  background: #996633;
+  height: 3em;
+}
+#email {
+  text-align: center;
+}
+body {
+  font-family: josefin sans;
+  background: lightgrey;
+  text-align: center;
+}
+.1 {
+  grid-column: 1;
+}
+
+.2 {
+  grid-column: 2;
+}
+.3 {
+  grid-column: 3;
+}
+
+.4 {
+  grid-column: 4;
+}
+.5 {
+  grid-column: 5;
+}
+#nav-link:hover {
+  color: white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+#nav-link {
+  font-size: 1.4em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #663300;
+  font-family: lato;
+}
+li {
+  list-style: none;
+}
+form {
+  align-items: center;
+  width: 100%;
+}
+input {
+  align-items: center;
+  width: 10%;
+  justify-content: center;
+  display: block;
+  outline: none;
+}
+.button {
+    background-color: #996633;
+  border-radius: 4px;
+  color: #eaeaea;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+</style>
+<header id="header">
+ 
+  <nav id="nav-bar">
+     <img src="" id="header-img" class="1">
+    <a href="#features" id="nav-link" class="nav-link 2">Features</a>
+    <a href="#features" id="nav-link" class="nav-link 3">How it Works</a>
+    <a href="#features" id="nav-link" class="nav-link 4">Pricing</a>
+    <a href="#features" id="nav-link" class="nav-link 5">More Stuff</a>
+    
+  </nav>
+</header>
+<div id="bar"></div>
+    
+        
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address here!" required/>
+        <input id="submit" type="submit" value="Press to Regret" class="button" name="email"></input>
+</form>
+        <ol id="features">
+          <li><h2><i class="fas fa-mug-hot"></i> Freshly Roasted Coffee Beans</h2></li>
+        <p>No stale coffee taste! Our beans are micro roasted upon receiving your order, so that you can have as fresh coffee as possible!</p>
+          <li><h2><i class="fas fa-ice-cream"></i> Premium Artisan Blend</h2></li>
+        <p>Chocolately and nutty flavors. You won't realize just how amazing coffee can taste until you've tried ours. <em>Existential crisis guaranteed!</em></p>
+          <li><h2><i class="fas fa-shipping-fast"></i> Super Fast Shipping</h2></li>
+        <p>It'll arrive on your doorstep <em>yesterday</em>! Yes, that's right, we manipulate the timestream to get coffee to you <del>impossibly</del> super legit fast!</p>
+        </ol>
+  <video width="320" height="240" id="video">
+    <source src="" type="video/mp4">
+      </video>
